@@ -30,6 +30,12 @@
             height: 300px;
             text-indent: 50px;
             padding: 0 0 0 500px;
+            position: absolute;
+            margin-left: 50px   ;
+        }
+
+        #desplegable option{
+            font-style: italic;
         }
 
     </style>
@@ -37,7 +43,7 @@
 <body>
     <form action="">
          <label for="">Seleccione una fruta o verdura:</label>
-         <select name="" id="">
+         <select name="" id="desplegable">
             <optgroup label="Frutas"></optgroup>
             <option value="">Naranjas</option>
             <option value="">Manzanas</option>
@@ -55,7 +61,7 @@
             <option value="">Rabanitos</option>
             <option value="">Calabaza</option>
 
-         </select><br>
+         </select><br><br>
         <input type="submit">
     </form>
 </body>

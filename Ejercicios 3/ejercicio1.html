@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imagen {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .imagen li {
+            background: url('icon.png') no-repeat left center;
+            height: 20px;
+            padding-left: 25px;
+        }
+
+        .random li:before{ 
+            content:":)"; position:relative; left:-5px;
+        } 
+        
+        .random li{ 
+            text-indent:-5px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ol>
+            <li>Crea la siguiente lista:</li><br>
+            <ol type="i">
+                <li>Lista 1 elemento nº1</li>
+                <li>Lista 1 elemento nº2</li>
+                <li>Lista 1 elemento nº3</li>
+                <li>Lista 1 elemento nº4</li>
+                <li>Lista 1 elemento nº5</li>
+                <li>Lista 1 elemento nº6</li>
+            </ol><br>
+            <li>Crea la siguiente lista:</li><br>
+            <ol>
+                <li value="4">Lista 2 elemento nº4</li>
+                <li value="5">Lista 2 elemento nº5</li>
+                <li value="6">Lista 2 elemento nº6</li>
+            </ol><br>
+            <li>Crea la siguiente lista:</li><br>
+            <ol reversed>
+                <li>Lista 1 elemento nº1</li>
+                <li>Lista 1 elemento nº2</li>
+                <li>Lista 1 elemento nº3</li>
+                <li>Lista 1 elemento nº4</li>
+                <li>Lista 1 elemento nº5</li>
+                <li>Lista 1 elemento nº6</li>
+            </ol><br>
+            <li>Crea una lista como la anterior pero usando algún tipo de guión para los items en vez de números:</li>
+            <br>
+            <ul class="random">
+                <li>Lista 1 elemento nº1</li>
+                <li>Lista 1 elemento nº2</li>
+                <li>Lista 1 elemento nº3</li>
+                <li>Lista 1 elemento nº4</li>
+                <li>Lista 1 elemento nº5</li>
+                <li>Lista 1 elemento nº6</li>
+            </ul><br>
+            <li>Crea una lista como la anterior pero usando una imagen pequeña a modo de guión para los items.</li><br>
+            <ul class="imagen">
+                <li>Lista 1 elemento nº1</li>
+                <li>Lista 1 elemento nº2</li>
+                <li>Lista 1 elemento nº3</li>
+                <li>Lista 1 elemento nº4</li>
+                <li>Lista 1 elemento nº5</li>
+                <li>Lista 1 elemento nº6</li>
+            </ul><br>
+        </ol>
+    </div>
+</body>
+
+</html>

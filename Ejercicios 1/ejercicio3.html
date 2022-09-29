@@ -1,39 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+        input {
+            caret-color: red;
+        }
+
         body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #ecf0f3;
             display: flex;
             align-items: center;
+            text-align: center;
             justify-content: center;
-            margin: 0 auto;
-            height: 100vh;
-            background-color: #f1f1f1;
+            place-items: center;
+            overflow: hidden;
+            font-family: poppins;
+        }
+
+        input,
+        .button {
+            display: block;
+            width: 100%;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .ticket,
+        .check {
+
+            align-items: center;
+            float: left;
+        }
+
+        .ticket {
+            padding-top: 0.9rem;
+            padding-left: 1rem;
         }
 
         input {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
+            background: #ecf0f3;
+            padding: 10px;
+            padding-left: 20px;
+            height: 50px;
+            font-size: 14px;
+            border-radius: 50px;
+            box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
         }
 
+        .check {
+            width: 3rem;
+        }
+
+        .button {
+            color: white;
+            margin-top: 20px;
+            background: #1DA1F2;
+            height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 900;
+            box-shadow: 6px 6px 6px #a2b9cf, -6px -6px 6px white;
+            transition: 0.5s;
+        }
+
+        .button:hover {
+            box-shadow: none;
+        }
+
+        h1 {
+            display: flex;
+            margin: auto;
+            top: 0;
+            left: 0;
+        }
     </style>
 </head>
+
 <body>
-    <form action="">
-         <label for="">Ingrese su nombre:</label>
-         <input type="text"><br>
-         <label for="">Seleccione el máximo nivel de estudios que tiene:</label> <br>
-         <input type="checkbox" value="Java" name="Java"><label>Sin estudios</label><br>
-         <input type="checkbox" value="C++" name="C++"><label>Primario</label><br>
-         <input type="checkbox" value="C" name="C"><label>Secundario</label><br>
-         <input type="checkbox" value="C#" name="C#"><label>Universitario</label><br>
-        <input type="submit">
-    </form>
+    <div>
+        <h1 style="justify-content: center;">Ejercicio 3</h1><br><br>
+        <form action="">
+            <label for="">Ingrese su nombre:</label>
+            <input type="text"><br>
+            <label for="">Seleccione el máximo nivel de estudios que tiene:</label> <br>
+            <input type="checkbox" value="Java" name="Java" class="check">
+            <label class="ticket">Sin estudios</label><br><br><br>
+            <input type="checkbox" value="C++" name="C++" class="check">
+            <label class="ticket">Primario</label><br><br><br>
+            <input type="checkbox" value="C" name="C" class="check">
+            <label class="ticket">Secundario</label><br><br><br>
+            <input type="checkbox" value="C#" name="C#" class="check">
+            <label class="ticket">Universitario</label><br><br>
+            <input type="submit" class="button">
+        </form>
+    </div>
 </body>
+
 </html>

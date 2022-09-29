@@ -1,68 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5</title>
     <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            height: 100vh;
-            background-color: #f1f1f1;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
         input {
+            caret-color: red;
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #ecf0f3;
             display: flex;
             align-items: center;
+            text-align: center;
             justify-content: center;
-            margin: 0 auto;
+            place-items: center;
+            overflow: hidden;
+            font-family: poppins;
         }
 
-        optgroup {
+        .input,
+        .button {
+            display: block;
+            width: 16rem;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .input {
+            background: #ecf0f3;
+            height: 2.5rem;
+            font-size: 14px;
+            border-radius: 20px;
+            box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+            margin: auto;
+        }
+
+        .button {
+            color: white;
+            margin-top: 20px;
+            background: #1DA1F2;
+            height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 900;
+            box-shadow: 6px 6px 6px #a2b9cf, -6px -6px 6px white;
+            transition: 0.5s;
+            width: 16rem;
+            margin: auto;
+        }
+
+        .button:hover {
+            box-shadow: none;
+        }
+
+        h1 {
+            display: flex;
+            margin: auto;
+            top: 0;
+            left: 0;
+        }
+
+        #desplegable option {
             font-style: italic;
+            text-indent: 3rem;
+            margin-left: 20px;
         }
-
-        option {
-            height: 300px;
-            text-indent: 50px;
-            padding: 0 0 0 500px;
-            position: absolute;
-            margin-left: 50px   ;
-        }
-
-        #desplegable option{
-            font-style: italic;
-        }
-
     </style>
 </head>
+
 <body>
-    <form action="">
-         <label for="">Seleccione una fruta o verdura:</label>
-         <select name="" id="desplegable">
-            <optgroup label="Frutas"></optgroup>
-            <option value="">Naranjas</option>
-            <option value="">Manzanas</option>
-            <option value="">Frutilla</option>
-            <option value="">Durazno</option>
-            <option value="">Ciruela</option>
+    <div>
+        <h1 style="justify-content: center;">Ejercicio 5</h1><br><br>
+        <form action="">
+            <label for="">Seleccione una fruta o verdura:</label><br><br>
+            <select name="" id="desplegable" class="input">
+                <optgroup label="Frutas"></optgroup>
+                    <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Naranjas</option>
+                    <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Manzanas</option>
+                    <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Frutilla</option>
+                    <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Durazno</option>
+                    <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Ciruela</option>
 
-            <optgroup label="Verduras"></optgroup>
-            <option value="">Lechuga</option>
-            <option value="">Acelga</option>
-            <option value="">Zapallo</option>
-            <option value="">Papas</option>
-            <option value="">Batatas</option>
-            <option value="">Zanahorias</option>
-            <option value="">Rabanitos</option>
-            <option value="">Calabaza</option>
+                <optgroup label="Verduras"></optgroup>
+                <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Lechuga</option>
+                <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Acelga</option>
+                <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Zapallo</option>
+                <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Papas</option>
+                <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Batatas</option>
+                <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Zanahorias</option>
+                <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Rabanitos</option>
+                <option value="">&nbsp;&nbsp;&nbsp;&nbsp; Calabaza</option>
 
-         </select><br><br>
-        <input type="submit">
-    </form>
+            </select><br>
+            <input type="submit" class="button">
+        </form>
+    </div>
 </body>
+
 </html>

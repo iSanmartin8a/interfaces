@@ -1,46 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+        input {
+            caret-color: red;
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #ecf0f3;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            place-items: center;
+            overflow: hidden;
+            font-family: poppins;
+        }
+
+        input,
+        .button {
+            display: block;
+            width: 100%;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .ticket,
+        .check {
+
+            align-items: center;
+            float: left;
+        }
+
+        .ticket {
+            padding-top: 0.9rem;
+            padding-left: 1rem;
+        }
+
+        input {
+            background: #ecf0f3;
+            padding: 10px;
+            padding-left: 20px;
+            height: 50px;
+            font-size: 14px;
+            border-radius: 50px;
+            box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+        }
+
+        .check {
+            width: 3rem;
+        }
+
+        .button {
+            color: white;
+            margin-top: 20px;
+            background: #1DA1F2;
+            height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 900;
+            box-shadow: 6px 6px 6px #a2b9cf, -6px -6px 6px white;
+            transition: 0.5s;
+            width: 16rem;
+            margin: auto;
+        }
+
+        .button:hover {
+            box-shadow: none;
+        }
+
+        h1 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: auto;
+            top: 0;
+            left: 0;
+        }
+
+        fieldset {
+            width: 30rem;
+        }
     </style>
 </head>
+
 <body>
-    <form action="">
-        <fieldset title="Datos personales">
-            <legend>Datos personales</legend>
+    <div>
+        <h1>Ejercicio 3</h1>
+        <form action="">
+            <fieldset title="Datos personales">
+                <legend>Datos personales</legend>
 
-            <label for="">Apellido y nombre:</label>
-            <input type="text"><br>
+                <label for="">Apellido y nombre:</label>
+                <input type="text"><br>
 
-            <label for="">Documento de identidad:</label>
-            <input type="text"><br>
+                <label for="">Documento de identidad:</label>
+                <input type="text"><br>
 
-            <label for="">Fecha de nacimiento:</label>
-            <input type="text"><br>
+                <label for="">Fecha de nacimiento:</label>
+                <input type="text"><br>
 
-            <label for="">Dirección:</label>
-            <input type="text"><br>
+                <label for="">Dirección:</label>
+                <input type="text"><br>
 
-        </fieldset>
+            </fieldset>
 
-         <fieldset title="Datos laborales">
-            <legend>Datos laborales</legend>
+            <fieldset title="Datos laborales">
+                <legend>Datos laborales</legend>
 
-            <label for="">Nombre de la empresa:</label>
-            <input type="text"><br>
+                <label for="">Nombre de la empresa:</label>
+                <input type="text"><br>
 
-            <label for="">Actividad:</label>
-            <input type="text"><br>
+                <label for="">Actividad:</label>
+                <input type="text"><br>
 
-            <label for="">Dirección:</label>
-            <input type="text"><br>
+                <label for="">Dirección:</label>
+                <input type="text"><br>
 
-        </fieldset>
+            </fieldset>
+            <br>
+            <input type="submit" class="button">
 
-    </form>
+        </form>
+    </div>
 </body>
+
 </html>

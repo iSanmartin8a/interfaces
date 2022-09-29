@@ -1,17 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 8</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+        input {
+            caret-color: red;
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #ecf0f3;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            place-items: center;
+            overflow: hidden;
+            font-family: poppins;
+        }
+
+        input,
+        .button, .input {
+            display: block;
+            width: 50rem;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .ticket,
+        .check {
+            align-items: center;
+            float: left;
+        }
+
+        .ticket {
+            padding-left: 1rem;
+        }
+
+        input, .input {
+            background: #ecf0f3;
+            padding: 10px;
+            padding-left: 20px;
+            height: 50px;
+            font-size: 14px;
+            border-radius: 50px;
+            box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px rgb(172, 172, 172);
+        }
+
+        .check {
+            width: 1rem;
+        }
+
+        .button {
+            color: white;
+            margin-top: 20px;
+            background: #1DA1F2;
+            height: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 900;
+            box-shadow: 6px 6px 6px #a2b9cf, -6px -6px 6px white;
+            transition: 0.5s;
+        }
+
+        .button:hover {
+            box-shadow: none;
+        }
+
+        h1 {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: auto;
+            top: 0;
+            left: 0;
+        }
+
+        .input {
+            height: 25rem;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="">
-        <input type="text" placeholder="Acme Corporation" disabled><br><br>
-        <textarea name="" id="" cols="30" rows="10" disabled style="width: 80%; margin-left: 10%;">En _____________, a ______­­­­­­­ de _____________ de 20………., entre ______________ (razón social), RUT__________, representada por don(a) _____________ en su calidad de __________, cédula de identidad Nº _________________, ambos domiciliados en calle _______________________, Nº _______________, comuna de _____________, ciudad de ___________________, que en adelante se denominará “el empleador”, y don(a) _________________________, de nacionalidad  __________________________ nacido(a) el ____________ de __________________ de............, cédula de identidad Nº _______________ de profesión u oficio _________________, domiciliado en calle__________________, Nº __________, comuna de......................................, ciudad de______________________, que en adelante se denominará “el trabajador”, se ha convenido en el siguiente contrato de trabajo, de acuerdo a lo señalado en el Artículo 145 A y siguientes del Código del Trabajo:
-            PRIMERO. El trabajador se compromete a desempeñar los servicios de Actor / Actriz para la producción:_________________________________, en adelante “La Producción”, que  el empleador grabará en ……………. [lugar o ciudad en que se presten los servicios], entre el ________[fecha]___________ y el _______[fecha]____________, contemplando una cantidad total de ___ capítulos, sin perjuicio de aquellas modificaciones que puedan requerirse por necesidades de la producción misma, las que se escriturarán en un anexo del presente contrato. </textarea>
-    </form>
-    
+    <div>
+        <h1>Ejercicio 8</h1><br>
+        <form action="">
+            <input type="text" placeholder="Acme Corporation" disabled><br><br>
+            <label>Contrato</label><br>
+            <textarea name="" id="" cols="30" rows="10" disabled class="input">En _____________, a ______­­­­­­­ de _____________ de 20………., entre ______________ (razón social), RUT__________, representada por don(a) _____________ en su calidad de __________, cédula de identidad Nº _________________, ambos domiciliados en calle _______________________, Nº _______________, comuna de _____________, ciudad de ___________________, que en adelante se denominará “el empleador”, y don(a) _________________________, de nacionalidad  __________________________ nacido(a) el ____________ de __________________ de............, cédula de identidad Nº _______________ de profesión u oficio _________________, domiciliado en calle__________________, Nº __________, comuna de......................................, ciudad de______________________, que en adelante se denominará “el trabajador”, se ha convenido en el siguiente contrato de trabajo, de acuerdo a lo señalado en el Artículo 145 A y siguientes del Código del Trabajo:
+                PRIMERO. El trabajador se compromete a desempeñar los servicios de Actor / Actriz para la producción:_________________________________, en adelante “La Producción”, que  el empleador grabará en ……………. [lugar o ciudad en que se presten los servicios], entre el ________[fecha]___________ y el _______[fecha]____________, contemplando una cantidad total de ___ capítulos, sin perjuicio de aquellas modificaciones que puedan requerirse por necesidades de la producción misma, las que se escriturarán en un anexo del presente contrato. </textarea>
+        </form>
+    </div>
+
 </body>
+
 </html>

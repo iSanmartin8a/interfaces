@@ -100,6 +100,19 @@
             align-items: flex-start;
         }
 
+        .fila_float {
+            overflow: auto;
+            justify-content: left;
+            align-items: flex-start;
+            float: left;
+            clear: both;
+            overflow: visible;
+        }
+
+        .fila_float::after {
+            clear: both;
+        }
+
         .columna img {
             display: block;
             overflow: auto;
@@ -157,6 +170,14 @@
             </div>
 
             <li>Coloca las bolas de billar con la distribución del ejercicio 4, mediante el uso de las propiedades float y clear.</li>
+            <div class="fila_float">
+                <img src="images/bola7.jpeg" alt="bola7">
+                <img src="images/bola8.jpeg" alt="bola8">
+                <img src="images/bola9.jpeg" alt="bola9">
+                <img src="images/bola10.jpeg" alt="bola10">
+                <img src="images/bola13.jpeg" alt="bola13">
+            </div>
+
             <li>Coloca las bolas de billar con la siguiente distribución, usando etiquetas div.</li>
             <li>Coloca las bolas de billar con la distribución del ejercicio 6, mediante el uso de las propiedades float
                 y

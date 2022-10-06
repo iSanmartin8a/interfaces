@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+input {
+    caret-color: red;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #ecf0f3;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    font-family: poppins;
+}
+
+img {
+    width: 3rem;
+}
+
+ol li {
+    text-align: left;
+}
+
+.fila {
+    justify-content: left;
+    display: flex;
+}
+
+.fila_separada {
+    justify-content: left;
+    display: flex;
+}
+
+.fila_float {
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.fila_float::after {
+    clear: both;
+}
+
+.fila_float #bola7, #bola8, #bola9, #bola10, #bola13, 
+            #bola7_2, #bola8_2, #bola9_2, #bola10_2, #bola13_2 {
+    float: left;
+    display: flexbox;
+}
+
+.fila_float #bola9, #bola9_2, #bola10_2 {
+    float: left;
+    clear: both;
+}
+
+.columna img {
+    display: block;
+}
+
+.columna_medio img {
+    display: block;
+    
+}
+
+.columna_medio {
+    position: fixed;
+    right: 50%;
+    bottom: 40%;
+}
+
+.columna_scroll img {
+    display: block;
+    overflow: scroll;
+}
+
+#main li {
+    clear: both;
+}
+
+#bola7_medio {
+    position:fixed;
+    bottom: 50%;
+    right: 50%;
+}
+
+.fila_medio {
+    position: fixed;
+    bottom: 50%;
+}

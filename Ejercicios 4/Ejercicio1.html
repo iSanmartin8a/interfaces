@@ -6,104 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
-
-        input {
-            caret-color: red;
-        }
-
-        body {
-            width: 100vw;
-            height: 100vh;
-            background: #ecf0f3;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            place-items: center;
-            font-family: poppins;
-        }
-
-        img {
-            width: 3rem;
-        }
-
-        ol li {
-            text-align: left;
-        }
-
-        .fila {
-            justify-content: left;
-            display: flex;
-        }
-
-        .fila_separada {
-            justify-content: left;
-            display: flex;
-        }
-
-        .fila_float {
-            justify-content: left;
-            align-items: flex-start;
-        }
-
-        .fila_float::after {
-            clear: both;
-        }
-
-        .fila_float #bola7, #bola8, #bola9, #bola10, #bola13, 
-                    #bola7_2, #bola8_2, #bola9_2, #bola10_2, #bola13_2 {
-            float: left;
-            display: flexbox;
-        }
-
-        .fila_float #bola9, #bola9_2, #bola10_2 {
-            float: left;
-            clear: both;
-        }
-
-        .columna img {
-            display: block;
-        }
-
-        .columna_medio img {
-            display: block;
-            
-        }
-
-        .columna_medio {
-            position: fixed;
-            right: 50%;
-            bottom: 40%;
-        }
-
-        .columna_scroll img {
-            display: block;
-            overflow: scroll;
-        }
-
-        #main li {
-            clear: both;
-        }
-
-        #bola7_medio {
-            position:fixed;
-            bottom: 50%;
-            right: 50%;
-        }
-
-        .fila_medio {
-            position: fixed;
-            bottom: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div>
         <h1>Posicionamiento y Layout</h1>
         <ol id="main">
-            <li>Coloca las 5 bolas de billar en fila.</li>
+            <li><a href="/Ejercicios/Ejercicio1.html"> Coloca las 5 bolas de billar en fila.</a></li>
             <div class="fila">
                 <img src="images/bola7.jpeg" alt="bola7">
                 <img src="images/bola8.jpeg" alt="bola8">
@@ -112,7 +22,7 @@
                 <img src="images/bola13.jpeg" alt="bola13">
             </div>
 
-            <li>Coloca las 5 bolas de billar en columna.</li>
+            <li><a href="/Ejercicios/Ejercicio2.html">Coloca las 5 bolas de billar en columna.</a></li>
             <div class="columna">
                 <img src="images/bola7.jpeg" alt="bola7">
                 <img src="images/bola8.jpeg" alt="bola8">
@@ -121,8 +31,8 @@
                 <img src="images/bola13.jpeg" alt="bola13">
             </div>
 
-            <li>Coloca las 5 bolas de billar en columna de modo que la primera siempre aparezca en la misma posición en
-                pantalla (aunque hagamos scroll).</li>
+            <li><a href="/Ejercicios/Ejercicio3.html">Coloca las 5 bolas de billar en columna de modo que la primera siempre aparezca en la misma posición en
+                pantalla (aunque hagamos scroll).</a></li>
             <div class="columna_scroll">
                 <img src="images/bola7.jpeg" alt="bola7">
                 <img src="images/bola8.jpeg" alt="bola8">
@@ -131,7 +41,7 @@
                 <img src="images/bola13.jpeg" alt="bola13">
             </div>
 
-            <li>Coloca las bolas de billar con la siguiente distribución, usando etiquetas div.</li>
+            <li><a href="/Ejercicios/Ejercicio4.html">Coloca las bolas de billar con la siguiente distribución, usando etiquetas div.</a></li>
             <div class="fila_separada">
                 <img src="images/bola7.jpeg" alt="bola7">
                 <img src="images/bola8.jpeg" alt="bola8">
@@ -142,8 +52,8 @@
                 <img src="images/bola13.jpeg" alt="bola13">
             </div>
 
-            <li>Coloca las bolas de billar con la distribución del ejercicio 4, mediante el uso de las propiedades float
-                y clear.</li>
+            <li><a href="/Ejercicios/Ejercicio5.html">Coloca las bolas de billar con la distribución del ejercicio 4, mediante el uso de las propiedades float
+                y clear.</a></li>
             <div class="fila_float">
                 <img src="images/bola7.jpeg" alt="bola7" id="bola7">
                 <img src="images/bola8.jpeg" alt="bola8" id="bola8">
@@ -152,7 +62,7 @@
                 <img src="images/bola13.jpeg" alt="bola13" id="bola13">
             </div>
 
-            <li>Coloca las bolas de billar con la siguiente distribución, usando etiquetas div.</li>
+            <li><a href="/Ejercicios/Ejercicio6.html">Coloca las bolas de billar con la siguiente distribución, usando etiquetas div.</a></li>
             <div class="fila_separada">
                 <img src="images/bola7.jpeg" alt="bola7">
                 <img src="images/bola8.jpeg" alt="bola8">
@@ -165,7 +75,7 @@
                 <img src="images/bola13.jpeg" alt="bola13">
             </div>
 
-            <li>Coloca las bolas de billar con la distribución del ejercicio 6, mediante el uso de las propiedades float y clear.</li>
+            <li><a href="/Ejercicios/Ejercicio7.html">Coloca las bolas de billar con la distribución del ejercicio 6, mediante el uso de las propiedades float y clear.</a></li>
             <div class="fila_float">
                 <img src="images/bola7.jpeg" alt="bola7" id="bola7_2">
                 <img src="images/bola8.jpeg" alt="bola8" id="bola8_2">
@@ -174,28 +84,31 @@
                 <img src="images/bola13.jpeg" alt="bola13" id="bola13_2">
             </div>
 
-            <li>Coloca las bolas de billar en columna, de modo que separen la pantalla del navegador en dos regiones con la misma área.</li>
-            <div class="columna_medio">
+            <li><a href="/Ejercicios/Ejercicio8.html">Coloca las bolas de billar en columna, de modo que separen la pantalla del navegador en dos regiones con la misma área.</a></li>
+            <!-- Lo comento que es molesto al verlos todos. Está en el link. -->
+            <!-- <div class="columna_medio">
                 <img src="images/bola7.jpeg" alt="bola7">
                 <img src="images/bola8.jpeg" alt="bola8">
                 <img src="images/bola9.jpeg" alt="bola9">
                 <img src="images/bola10.jpeg" alt="bola10">
                 <img src="images/bola13.jpeg" alt="bola13">
-            </div>
+            </div> -->
 
-            <li>Coloca las bolas de billar en fila, justo a mitad de altura de la ventana del navegador.</li>
-            <div class="fila_medio">
+            <li><a href="/Ejercicios/Ejercicio9.html">Coloca las bolas de billar en fila, justo a mitad de altura de la ventana del navegador.</a></li>
+            <!-- Lo comento que es molesto al verlos todos. Está en el link. -->
+            <!-- <div class="fila_medio">
                 <img src="images/bola7.jpeg" alt="bola7">
                 <img src="images/bola8.jpeg" alt="bola8">
                 <img src="images/bola9.jpeg" alt="bola9">
                 <img src="images/bola10.jpeg" alt="bola10">
                 <img src="images/bola13.jpeg" alt="bola13">
-            </div>
+            </div> -->
 
-            <li>Coloca una única bola de billar, pero justo en el centro de la pantalla (para cualquier pantalla).</li>
-            <div class="medio">
+            <li><a href="/Ejercicios/Ejercicio10.html">Coloca una única bola de billar, pero justo en el centro de la pantalla (para cualquier pantalla).</a></li>
+            <!-- Lo comento que es molesto al verlos todos. Está en el link. -->
+            <!-- <div class="medio">
                 <img src="images/bola7.jpeg" alt="bola7" id="bola7_medio">
-            </div>
+            </div> -->
         </ol>
     </div>
 </body>

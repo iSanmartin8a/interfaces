@@ -31,3 +31,19 @@ p .resaltar {
     background-color: yellow;
     font-size: 110%;
 }
+
+[href$=".pdf"]:before {
+    content: "📜";
+  }
+
+  [href$=".zip"]:before {
+    content: "📁";
+  }
+
+  [href$=".com"]:before {
+    content: "🌐";
+  }
+
+  [href$="enlaces"]:before {
+    content: "🔗";
+  }

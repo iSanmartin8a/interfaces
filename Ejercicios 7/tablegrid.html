@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="apartadoA">
+        <h1>Apartado A</h1>
+        <table id="table1">
+            <tr>
+                <td class="orange" scope="row" colspan="4"></td>
+            </tr>
+            <tr>
+                <td class="yellow" scope="row"></td>
+                <td class="blue" colspan="3"></td>
+            </tr>
+            <tr>
+                <td class="yellow" colspan="2" scope="row"></td>
+                <td class="red"></td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td class="yellow" scope="row"></td>
+                <td class="red"></td>
+                <td class="red"></td>
+                <td class="red"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="apartadoB">
+        <h1>Apartado B</h1>
+        <table id="table2">
+            <tr>
+                <td class="orange" scope="row" id="largeOrange" colspan="4"></td>
+            </tr>
+            <tr>
+                <td class="yellow" scope="row"></td>
+                <td class="blue" id="largeBlue" colspan="3"></td>
+            </tr>
+            <tr>
+                <td class="yellow" scope="row" id="largeYellow" colspan="2"></td>
+                <td class="red"></td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td class="yellow" scope="row" id="smallYellow"></td>
+                <td class="red" colspan="3" id="largeRed"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="apartadoC">
+        <h1>Apartado C</h1>
+        <table id="table3">
+            <thead>
+                <td>Horas</td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miércoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </thead>
+            <tr>
+                <td></td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td rowspan="3"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

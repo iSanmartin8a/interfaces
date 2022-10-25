@@ -1,0 +1,91 @@
+table, th, td {
+    border: 2px solid black;
+    border-spacing: 10px;
+  }
+
+  tr {
+      height: 7rem;
+  }
+
+/* APARTADO A */
+
+#apartadoA {
+    width: 40%;
+    float: left;
+    margin-left: 3rem;
+}
+
+#table1 {
+    width: 100%;
+    margin: 0%;
+}
+
+/* APARTADO B */
+
+#apartadoB {
+    width: 40%;
+    float: right;
+    margin-right: 3rem;
+}
+
+#table2 {
+    width: 100%;
+    margin: 0%;
+}
+
+#largeOrange {
+    width: 100%;
+}
+
+#largeBlue {
+    width: 75%;
+}
+
+#largeYellow {
+    width: 50%;
+}
+
+#largeRed {
+    width: 75%;
+}
+
+#smallYellow {
+    width: 25%;
+}
+
+/* APARTADO C */
+
+#apartadoC {
+    justify-content: center;
+    padding-top: 5rem;
+    margin: auto;
+    width: 40%;
+    clear: both;
+}
+
+#table3 {
+    width: 100%;
+    margin: 0%; 
+}
+
+#table3 tr {
+    height: 3rem;
+}
+
+/* COLORES */
+
+.orange {
+    background: orange;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: red;
+}

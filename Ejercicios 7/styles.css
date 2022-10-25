@@ -1,91 +1,169 @@
-table, th, td {
-    border: 2px solid black;
-    border-spacing: 10px;
-  }
+table,
+th,
+td {
+  border: 2px solid black;
+  border-spacing: 10px;
+}
 
-  tr {
-      height: 7rem;
-  }
+tr {
+  height: 7rem;
+}
 
 /* APARTADO A */
 
 #apartadoA {
-    width: 40%;
-    float: left;
-    margin-left: 3rem;
+  width: 40%;
+  float: left;
+  margin-left: 3rem;
 }
 
 #table1 {
-    width: 100%;
-    margin: 0%;
+  width: 100%;
+  margin: 0%;
 }
 
 /* APARTADO B */
 
 #apartadoB {
-    width: 40%;
-    float: right;
-    margin-right: 3rem;
+  width: 40%;
+  float: right;
+  margin-right: 3rem;
 }
 
 #table2 {
-    width: 100%;
-    margin: 0%;
+  width: 100%;
+  margin: 0%;
 }
 
 #largeOrange {
-    width: 100%;
+  width: 100%;
 }
 
 #largeBlue {
-    width: 75%;
+  width: 75%;
 }
 
 #largeYellow {
-    width: 50%;
+  width: 50%;
 }
 
 #largeRed {
-    width: 75%;
+  width: 75%;
 }
 
 #smallYellow {
-    width: 25%;
+  width: 25%;
 }
 
 /* APARTADO C */
 
 #apartadoC {
-    justify-content: center;
-    padding-top: 5rem;
-    margin: auto;
-    width: 40%;
-    clear: both;
+  justify-content: center;
+  padding-top: 5rem;
+  margin: auto;
+  width: 40%;
+  clear: both;
 }
 
 #table3 {
-    width: 100%;
-    margin: 0%; 
+  width: 100%;
+  margin: 0%;
+  border-spacing: 0px;
+  border: 0px solid black;
+  font-size: 2rem;
+}
+
+#table3 td {
+  border: 1px solid black;
 }
 
 #table3 tr {
-    height: 3rem;
+  height: 3rem;
+}
+
+#table3 thead {
+  font-weight: bold;
+}
+
+/* EJERCICIO 2 */
+
+#ejercicio2 {
+  width: 40%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 6.2rem 7.1rem 7.6rem 10rem 7.3rem 7.9rem;
+  grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem 3rem;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+#ejercicio2 div {
+    width: 100%;
+  border: 1px solid black;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  font-weight: bold;
+  grid-row: 1;
+  align-items: center;
+}
+
+.hours {
+    grid-column: 1;
+}
+
+.three {
+    grid-row: span 3;
+}
+
+.two {
+    grid-row: span 2;
+}
+
+.recreo {
+    grid-column: span 5;
+    letter-spacing: 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
 /* COLORES */
 
 .orange {
-    background: orange;
+  background: orange;
 }
 
 .yellow {
-    background: yellow;
+  background: yellow;
 }
 
 .blue {
-    background: blue;
+  background: blue;
 }
 
 .red {
-    background: red;
+  background: red;
+}
+
+.salmon {
+  background: rgb(234, 150, 122);
+}
+
+.olive {
+  background: rgb(144, 238, 144);
+}
+
+.purple {
+  background: rgb(153, 49, 204);
+}
+
+.lightblue {
+  background: rgb(30, 144, 255);
+}
+
+.cream {
+  background: rgb(240, 231, 140);
 }

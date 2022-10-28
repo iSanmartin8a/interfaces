@@ -87,20 +87,92 @@ tr {
 
 /* EJERCICIO 2 */
 
-#ejercicio2 {
+#wrapperA2 {
+  float: left;
+  width: 40%;
+  margin-left: 5%;
+}
+
+#wrapperB2 {
+  float: right;
+  width: 40%;
+  margin-right: 5%;
+}
+
+#wrapperC2 {
+  margin: auto;
+  width: 40%;
+  clear: both;
+  padding-top: 5rem;
+}
+
+#apartadoA2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-rows: 6rem 6rem 6rem 6rem;
+  font-size: 2rem;
+  justify-content: center;
+  row-gap: 7px;
+  column-gap: 10px;
+  border: 2px solid black;
+
+}
+
+#apartadoB2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-rows: 6rem 6rem 6rem 6rem;
+  font-size: 2rem;
+  justify-content: center;
+  row-gap: 7px;
+  column-gap: 10px;
+  border: 2px solid black;
+  margin-right: 5%;
+}
+
+#apartadoA2 div, #apartadoB2 div {
+  width: 100%;
+  text-align: left;
+  border: 2px solid black;
+  display: flex;
+  border-spacing: 2px;
+}
+
+.top {
+  margin-top: 9px;
+}
+
+.bottom {
+  margin-bottom: 9px;
+}
+
+.verylong {
+  grid-column: span 4;
+}
+
+.long {
+  grid-column: span 3;
+}
+
+.medium {
+  grid-column: span 2;
+}
+
+#apartadoC2 {
   width: 40%;
   margin: auto;
   display: grid;
-  grid-template-columns: 6.2rem 7.1rem 7.6rem 10rem 7.3rem 7.9rem;
+  grid-template-columns: 6.9rem 7.1rem 8.1rem 11.5rem 8rem 8.5rem;
   grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem 3rem;
   font-size: 2rem;
   justify-content: center;
 }
 
-#ejercicio2 div {
-    width: 100%;
+#apartadoC2 div {
+  width: 100%;
   border: 1px solid black;
-  text-align: left;
   display: flex;
   align-items: center;
 }
@@ -108,7 +180,6 @@ tr {
 .header {
   font-weight: bold;
   grid-row: 1;
-  align-items: center;
 }
 
 .hours {

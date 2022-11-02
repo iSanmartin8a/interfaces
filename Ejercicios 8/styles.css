@@ -1,0 +1,58 @@
+#container {
+    width: 300px;
+    height: 300px;
+    border: 4px solid green;
+    margin: auto;
+    position: relative;
+}
+
+.circle {
+    border-radius: 5000px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    transition: 1s;
+    padding-top: 2%;
+}
+
+#uno {
+    border: 50px solid yellow;
+    margin-top: 10%;
+    margin-left: 28%;
+}
+
+#dos {
+    border: 50px solid green;
+    margin-top: 48%;
+    margin-left: 6.5%;
+}
+
+#tres {
+    border: 50px solid blue;
+    margin-top: 48%;
+    margin-left: 50%;
+}
+
+#uno:hover, #dos:hover, #tres:hover {
+    border: 50px solid black;
+    transition: 1s;
+}
+
+#uno::before{
+    content: "1";
+}
+
+#dos::before{
+    content: "2";
+}
+
+#tres::before{
+    content: "3";
+}
+
+#uno:hover::before, #dos:hover::before, #tres:hover::before{
+    content: "8";
+}

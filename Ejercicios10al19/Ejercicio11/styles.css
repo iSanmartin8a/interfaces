@@ -1,0 +1,127 @@
+body {
+  margin: 15em;
+  padding: 0;
+  background-color: #ffd3f3;
+  color: #333333;
+}
+
+h4 {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* ESTILO 1 CON DIVS */
+
+#contenido {
+  width: 700px;
+  height: 100%;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+#logo {
+  height: 60px;
+  background-color: #fff15d;
+  color: #000000;
+}
+
+#cabecera {
+  height: fit-content;  
+  text-align: center;
+  background-color: #f78181;
+  color: #000000;
+}
+
+#izquierda {
+  float: left;
+  width: 75.5%;
+  padding: 5px;
+}
+
+#derecha {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background-color: #ffcd61;
+  color: #333333;
+}
+
+#pies {
+  clear: both;
+}
+
+#pie1 {
+  float: left;
+  background-color: red;
+  color: white;
+  width: 50%;
+}
+
+#pie2 {
+  float: right;
+  background-color: yellow;
+  color: #333333;
+  width: 50%;
+}
+
+
+/* ESTILO 2 CON ETIQUETAS PROPIAS DE HTML */
+
+/* #contenido {
+    width: 700px;
+    height: 100%;
+    background-color: #ffffff;
+    margin: auto;
+  }
+
+header {
+    height: 60px;
+    background-color: #fff15d;
+    color: #000000;
+}
+
+nav {
+    height: fit-content;  
+    text-align: center;
+    background-color: #f78181;
+    color: #000000;
+}
+
+section {
+    float: left;
+    width: 75.5%;
+    padding: 5px;
+}
+
+aside {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background-color: #ffcd61;
+    color: #333333;
+}
+
+footer {
+    clear: both;
+}
+
+#pie1 {
+    float: left;
+    background-color: red;
+    color: white;
+    width: 50%;
+    margin: 0;
+}
+
+#pie2 {
+    float: right;
+    background-color: yellow;
+    color: #333333;
+    width: 50%;
+    margin: 0;
+} */
+
+/* NOTAS */
+
+    /* He cambiado el valor de 2em a 2.5em en height de #cabecera o nav porque en mi navegador no encajaba del todo. */
+    /* Al final he optado por poner fit-content, para que se ajuste al contenido. Mi problema era que se me pasa en dos líneas */

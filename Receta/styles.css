@@ -154,9 +154,9 @@ body {
   visibility: visible;
 }
 
-.card:has(.cardHeader .left #checkEng1:checked) #spanish1,
-.card:has(#checkEng2:checked) .text .ingles #english2,
-.card:has(#checkEng3:checked) .text .ingles #english3,
-.card:has(#checkEng4:checked) .text .ingles #english4 {
-  visibility: hidden;
+#eng1:checked ~ h2,
+.card:has(#checkEng2:checked) .text .ingles #spanish2,
+.card:has(#checkEng3:checked) .text .ingles #spanish3,
+.card:has(#checkEng4:checked) .text .ingles #spanish4 {
+  color: red;
 }

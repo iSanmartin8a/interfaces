@@ -1,0 +1,91 @@
+body {
+  background: white;
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0;
+}
+
+#container {
+  width: fit-content;
+  height: fit-content;
+  background: white;
+  margin: auto;
+  margin-top: 0.25rem;
+}
+
+#banner {
+  width: fit-content;
+  height: fit-content;
+}
+
+#section {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(99, 56, 37);
+  color: white;
+  column-gap: 17rem;
+}
+
+#bannerIMG {
+  text-align: left;
+}
+
+#title {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+#nav {
+  width: 100%;
+  background: black;
+  height: 3rem;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  background: green;
+  color: white;
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#button {
+  height: 2.4rem;
+  padding-top: 0.6rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(212, 212, 212);
+}
+
+/* DROPDOWN */

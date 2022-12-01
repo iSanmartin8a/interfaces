@@ -69,33 +69,40 @@ body {
 .dropdown {
   display: inline-block;
   position: relative;
-  background: green;
+  background: rgb(60, 150, 97);
   color: white;
   width: 7rem;
   height: 3rem;
   font-size: 1.3rem;
   text-align: center;
   vertical-align: middle;
+  transition: 0.3s;
 }
 
 #button {
   height: 2.4rem;
-  padding-top: 0.6rem;
+  padding-top: 0.75rem;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 3rem;
   width: 130%;
   overflow: auto;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
   font-size: 0.9rem;
   text-align: left;
+  background: white;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  background: white;
+}
+
+.dropdown:hover {
+  background: rgb(0, 100, 0);
+  transition: 0.3s;
 }
 
 .dropdown-content a {
@@ -146,6 +153,7 @@ body {
   padding: 0.5rem;
   height: fit-content;
   width: 90%;
+  text-align: justify;
 }
 
 #english1,
@@ -174,6 +182,7 @@ body {
 #Manzana:target,
 #Catalana:target {
   border: 1px solid red !important;
+  box-shadow: 5px 5px 5px 0px rgba(226, 3, 3, 0.4);
   border-radius: 1rem !important;
   transition: 1s;
 }
@@ -218,9 +227,14 @@ body {
 }
 
 #Manzana {
-  height: 18rem;
+  height: 19rem;
 }
 
 #Catalana {
   height: 14rem;
+}
+
+#inicio {
+  text-decoration: none;
+  color: white;
 }

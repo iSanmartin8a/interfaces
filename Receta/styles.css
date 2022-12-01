@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: white;
   color: #000;
@@ -104,30 +108,26 @@ body {
     width: 60%;
     background: white;
     border-radius: 0.4rem;
-    padding: 3rem;
+    padding: 1rem;
     margin: auto;   
     margin-bottom: 4rem;
     border: 1px solid black;
-    height: 20rem;
-}
-
-.left {
-    float: left;
-    width: 50%;
-    height: fit-content;
-}
-
-.right {
-    float: right;
-    width: 50%;
-    height: fit-content;
-    text-align: right;
+    height: 100%;
+    position: relative;
 }
 
 .icono {
     width: 6rem;
-    margin-right: 0.5rem;
     border: 1px solid black;
+    position: relative;
+    left: 30rem;
+    top: -5.5rem;
+}
+
+.spanish, .english {
+  position: absolute;
+  top: 5rem;
+  z-index: 1;
 }
 
 .cardHeader {
@@ -135,28 +135,20 @@ body {
     height: 5rem;
 }
 
-.text {
-  position: relative;
-}
-
-.español, .ingles {
-  position: absolute;
-}
-
 #english1, #english2, #english3, #english4 {
   visibility: hidden;
 }
 
-.card:has(.cardHeader .left #checkEng1:checked) #english1,
-.card:has(#checkEng2:checked) .text .ingles #english2,
-.card:has(#checkEng3:checked) .text .ingles #english3,
-.card:has(#checkEng4:checked) .text .ingles #english4 {
-  visibility: visible;
+#eng1:checked ~ #spanish1,
+#eng2:checked ~ #spanish2,
+#eng3:checked ~ #spanish3,
+#eng4:checked ~ #spanish4 {
+  visibility: hidden;
 }
 
-#eng1:checked ~ h2,
-.card:has(#checkEng2:checked) .text .ingles #spanish2,
-.card:has(#checkEng3:checked) .text .ingles #spanish3,
-.card:has(#checkEng4:checked) .text .ingles #spanish4 {
-  color: red;
+#eng1:checked ~ #english1,
+#eng2:checked ~ #english2,
+#eng3:checked ~ #english3,
+#eng4:checked ~ #english4 {
+  visibility: visible;
 }

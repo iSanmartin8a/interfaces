@@ -4,15 +4,16 @@ html {
 
 body {
   background: white;
+  position: relative;
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.42857143;
   margin: 0;
+  height: auto;
 }
 
 #container {
-    width: 61.9rem;
+  width: 61.9rem;
   height: fit-content;
   background: white;
   margin: auto;
@@ -45,9 +46,22 @@ body {
 }
 
 #nav {
-    width: 100%;
+  position: sticky;
+  top: 0;
+  width: 100%;
   background: black;
   height: 3rem;
+  z-index: 999;
+}
+
+#footer {
+  width: 98.45%;
+  background: black;
+  height: 2rem;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+    padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 /* DROPDOWN */
@@ -102,40 +116,42 @@ body {
   height: fit-content;
   background: grey;
   padding: 1rem;
+  overflow: auto;
 }
 
 .card {
-    width: 60%;
-    background: white;
-    border-radius: 0.4rem;
-    padding: 1rem;
-    margin: auto;   
-    margin-bottom: 4rem;
-    border: 1px solid black;
-    height: 100%;
-    position: relative;
+  position: relative;
+  width: 60%;
+  background: white;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  border: 1px solid black;
+  height: fit-content;
 }
 
 .icono {
-    width: 6rem;
-    border: 1px solid black;
-    position: relative;
-    left: 30rem;
-    top: -5.5rem;
+  width: 6rem;
+  border: 1px solid black;
+  position: relative;
+  left: 30rem;
+  top: -5.5rem;
 }
 
-.spanish, .english {
+.spanish,
+.english {
   position: absolute;
   top: 5rem;
-  z-index: 1;
+  padding: 0.5rem;
+  height: fit-content;
+  width: 90%;
 }
 
-.cardHeader {
-    margin-bottom: 1rem;
-    height: 5rem;
-}
-
-#english1, #english2, #english3, #english4 {
+#english1,
+#english2,
+#english3,
+#english4 {
   visibility: hidden;
 }
 
@@ -151,4 +167,60 @@ body {
 #eng3:checked ~ #english3,
 #eng4:checked ~ #english4 {
   visibility: visible;
+}
+
+#Tiramisu:target,
+#Chocolate:target,
+#Manzana:target,
+#Catalana:target {
+  border: 1px solid red !important;
+  border-radius: 1rem !important;
+  transition: 1s;
+}
+
+#Tiramisu,
+#Chocolate,
+#Manzana,
+#Catalana {
+  transition: 1s;
+  scroll-margin-top: 5rem;
+}
+
+#col1:checked ~ #spanish1,
+#col2:checked ~ #spanish2,
+#col3:checked ~ #spanish3,
+#col4:checked ~ #spanish4,
+#col1:checked ~ #english1,
+#col2:checked ~ #english2,
+#col3:checked ~ #english3,
+#col4:checked ~ #english4 {
+  column-count: 2;
+}
+
+.clearfix{
+  position: relative;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;        
+}
+
+#Tiramisu {
+  height: 18rem;
+}
+
+#Chocolate {
+  height: 15rem;
+}
+
+#Manzana {
+  height: 18rem;
+}
+
+#Catalana {
+  height: 14rem;
 }

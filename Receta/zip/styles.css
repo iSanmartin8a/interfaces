@@ -192,7 +192,7 @@ body {
 #Manzana,
 #Catalana {
   transition: 1s;
-  scroll-margin-top: 20rem;
+  scroll-margin-top: 5rem;
 }
 
 #col1:checked ~ #spanish1,

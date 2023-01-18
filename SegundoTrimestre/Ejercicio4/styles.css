@@ -1,0 +1,169 @@
+:root {
+    --taconrosa: -148px 0;
+    --taconblanco: -296px 0;
+    --reloj: -444px 0;
+    --gafarosa: -592px 0;
+    --gafanegra: -740px 0;
+    --colonia: -888px 0;
+    --collar: -1036px 0;
+    --bolsonegro: -1184px 0;
+    --bolsoblanco: -1332px 0;
+  }
+  
+
+.sprite { background: url('sprite.png') no-repeat top left; width: 128px; height: 128px; margin: 1.2rem; transition: 0.5s;} 
+.sprite.logo { background-position: 0 0; } 
+.sprite.taconRosa { background-position: -148px 0; } 
+.sprite.taconBlanco { background-position: -296px 0; } 
+.sprite.reloj { background-position: -444px 0; } 
+.sprite.gafaRosa { background-position: -592px 0; } 
+.sprite.gafaNegra { background-position: -740px 0; } 
+.sprite.colonia { background-position: -888px 0; } 
+.sprite.collar { background-position: -1036px 0; } 
+.sprite.bolsoNegro { background-position: -1184px 0; } 
+.sprite.bolsoBlanco { background-position: -1332px 0; } 
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container .sprite:hover {
+    transform: scale(1.5) saturate(2);
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.info {
+    position: absolute;
+    bottom: 35rem;
+    left: 50rem;
+    width: 20rem;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+#container .sprite:hover .info {
+    opacity: 1;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(179, 198, 238);
+}
+
+.options {
+    /* margin-left: 20rem; */
+    width: 20rem;
+}
+
+.options li:hover {
+    color: blue;
+}
+
+ul .taro:hover ~ div {
+    animation: taconrosa 0.3s linear forwards !important;
+}
+
+ul .tabl:hover ~ div {
+    animation: taconblanco 0.3s linear forwards !important;
+}
+
+ul .rel:hover ~ div {
+    animation: reloj 0.3s linear forwards !important;
+}
+
+ul .garo:hover ~ div {
+    animation: gafarosa 0.3s linear forwards !important;
+}
+
+ul .gane:hover ~ div {
+    animation: gafanegra 0.3s linear forwards !important;
+}
+
+ul .col:hover ~ div {
+    animation: colonia 0.3s linear forwards !important;
+}
+
+ul .coll:hover ~ div {
+    animation: collar 0.3s linear forwards !important;
+}
+
+ul .bolne:hover ~ div {
+    animation: bolsonegro 0.3s linear forwards !important;
+}
+
+ul .bolbl:hover ~ div {
+    animation: bolsoblanco 0.3s linear forwards !important;
+}
+
+.containerDos  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+
+@keyframes taconrosa {
+    100% {
+      background-position: var(--taconrosa);
+    }
+  }
+
+  @keyframes taconblanco {
+    100% {
+      background-position: var(--taconblanco);
+    }
+  }
+
+  @keyframes reloj {
+    100% {
+      background-position: var(--reloj);
+    }
+  }
+
+  @keyframes gafarosa {
+    100% {
+      background-position: var(--gafarosa);
+    }
+  }
+
+  @keyframes gafanegra {
+    100% {
+      background-position: var(--gafanegra);
+    }
+  }
+
+  @keyframes colonia {
+    100% {
+      background-position: var(--colonia);
+    }
+  }
+
+  @keyframes collar {
+    100% {
+      background-position: var(--collar);
+    }
+  }
+
+  @keyframes bolsonegro {
+    100% {
+      background-position: var(--bolsonegro);
+    }
+  }
+
+  @keyframes bolsoblanco {
+    100% {
+      background-position: var(--bolsoblanco);
+    }
+  }

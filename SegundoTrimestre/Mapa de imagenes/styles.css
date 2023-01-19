@@ -1,0 +1,72 @@
+.mapa_imagen {
+  position: relative;
+  width: fit-content;
+}
+
+img {
+    width: 450px;
+}
+
+.notas li {
+  list-style: none;
+  display: none;
+  position: absolute;
+  border: medium solid white;
+  background: url("esta_imagen_no_existe");
+}
+
+.mapa_imagen:hover ul.notas li {
+  display: block;
+}
+
+.notas li p {
+  margin: 10px 0 0 0;
+  padding: 0.4em;
+  display: none;
+  background: #fff;
+  opacity: 0.65;
+  position: absolute;
+  top: 100%;
+}
+
+li:hover p {
+  display: block;
+}
+
+#nota1 {
+  width: 160px;
+  height: 130px;
+  top:  10px;
+  left: 80px;
+}
+
+#nota1 p {
+  width: 4rem !important;
+  left: 11rem;
+  top: 0rem;
+}
+
+#nota2 {
+    width: 80px;
+    height: 55px;
+    top: 155px;
+    left: 30px;
+}
+
+#nota2 p {
+  width: 7rem !important;
+  top: 3.1rem;
+}
+
+#nota3 {
+  width: 100px;
+  height: 90px;
+  top: 155px;
+  left: 300px;
+}
+
+#nota3 p {
+  width: 3rem !important;
+  left: -4.5rem;
+  top: -0.8rem;
+}

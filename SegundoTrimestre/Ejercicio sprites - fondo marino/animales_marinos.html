@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animales - Marinos</title>
+</head>
+<style>
+#contenedor{
+    width: 500px;    
+    border: 1px solid black;    
+    border-radius: 10px;
+    margin: 10px auto;
+    
+}
+
+#contenedor{    
+    height: 500px;
+    background-image: url(animales-marinos.png);    
+    position: relative;
+}
+
+#contenedor div{
+    position: absolute;   
+    z-index: 999;     
+}
+
+#caballito {left: 0px; top: 0px; width: 140px; height: 260px;}
+#tortuga {left: 140px; top: 0px; width: 340px; height: 170px;}
+#cangrejo {left: 110px; top: 130px; width: 150px; height: 130px;}
+
+#caballito:hover {background: url(animales-marinos.png) 0px -500px no-repeat;}
+#tortuga:hover {background: url(animales-marinos.png) -140px -500px no-repeat;}
+#cangrejo:hover {background: url(animales-marinos.png) -140px -670px no-repeat;}
+  
+</style>
+<body>
+
+<div id="contenedor">    
+    <div id="caballito"></div>
+    <div id="tortuga"></div>    
+    <div id="cangrejo"></div>    
+    <div id="medusa"></div>    
+    <div id="pez"></div>    
+    <div id="ballena"></div>    
+</div>  
+                
+</body>
+</html>

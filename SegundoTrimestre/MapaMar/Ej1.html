@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            margin: auto;
+            z-index: 990;
+        }
+
+        label {
+            position: absolute;
+            opacity: 0;
+            background-color: #fff;
+            border: 1px solid #000;
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 999;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        #caballito:hover+label {
+            opacity: 1;
+            top: 17rem;
+            left: 1rem;
+        }
+
+        #nemo:hover+label {
+            opacity: 1;
+            top: 27rem;
+            left: 1rem;
+        }
+
+        #ballena:hover+label {
+            opacity: 1;
+            top: 32rem;
+            left: 11rem;
+        }
+
+        #pulpo:hover+label {
+            opacity: 1;
+            top: 21rem;
+            left: 18rem;
+        }
+
+        #tortu:hover+label {
+            opacity: 1;
+            top: 12rem;
+            left: 15rem;
+        }
+
+        #cangrejo:hover+label {
+            opacity: 1;
+            top: 16rem;
+            left: 8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="mar.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area id="caballito" target="" alt="caballito" title="caballito" href=""
+            coords="22,234,15,212,22,197,28,184,14,177,9,167,6,149,6,137,8,119,16,108,28,109,27,93,30,71,34,57,40,43,51,38,63,33,79,31,96,31,107,37,109,54,118,70,121,82,127,89,136,99,136,112,121,118,112,125,101,129,102,139,107,157,108,168,109,177,105,187,98,198,96,207,98,217,98,229,93,244,82,253,59,256,41,251,32,244"
+            shape="poly">
+        <label for="caballito">Alejandro Sanmartín</label>
+        <area id="nemo" target="" alt="" title="" href=""
+            coords="40,302,22,315,20,327,10,341,7,354,12,366,20,373,29,382,38,393,54,402,75,406,97,408,110,404,117,396,125,389,125,380,125,368,126,353,124,341,119,326,101,307,92,299,75,290,59,294"
+            shape="poly">
+        <label for="nemo">Lúcas Arrojo</label>
+        <area id="ballena" target="" alt="" title="" href=""
+            coords="132,399,147,433,173,457,226,480,315,480,377,463,415,432,439,391,443,360,457,350,478,333,486,316,466,311,445,307,439,283,429,269,416,264,402,282,395,304,397,319,402,332,409,344,412,352,406,362,391,368,373,370,357,361,347,355,270,309,239,297,208,294,179,300,161,311,144,331,135,349,129,371"
+            shape="poly">
+        <label for="ballena">Mohamed Merzouk</label>
+        <area id="pulpo" target="" alt="" title="" href=""
+            coords="270,189,265,213,266,233,265,249,265,262,268,276,273,296,281,306,293,316,313,324,332,323,353,324,371,316,388,310,393,301,399,281,400,265,405,247,406,223,408,196,396,173,372,156,354,150,329,149,298,154,284,168"
+            shape="poly">
+        <label for="pulpo">Angela Ledo</label>
+        <area id="tortu" target="" alt="" title="" href=""
+            coords="176,60,186,80,203,88,212,98,221,108,230,121,241,131,247,141,244,153,247,163,256,168,267,164,278,156,285,149,329,149,371,143,382,149,397,154,412,154,412,142,410,131,413,118,407,90,388,59,368,42,340,37,306,38,286,47,273,42,264,23,253,10,225,5,203,5,190,15,181,34"
+            shape="poly">
+        <label for="tortu">Miguel Arroyo</label>
+        <area id="cangrejo" target="" alt="" title="" href="" coords="179,235,155,239,144,253,125,250,112,245,107,234,105,218,101,210,102,199,109,186,110,172,105,150,102,135,107,123,118,122,129,128,138,137,147,130,166,124,177,124,185,120,198,117,207,108,218,108,231,119,241,133,239,149,238,162,250,171,259,176,264,190,259,204,261,217,251,228,239,234,224,238,223,226" shape="poly">
+        <label for="cangrejo">Diego Tejada</label>
+    </map>
+
+</body>
+
+</html>

@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #canvas {
+            width: 307px;
+            height: 282px;
+            border: 1px solid black;
+            margin: auto;
+            background: url('spriteBoy.png');
+            animation: playIdle .75s steps(5, end) infinite;
+        }
+
+        @keyframes playWalk {
+            from {
+                background-position: 0px 282px;
+            }
+
+            to {
+                background-position: -4605px 282px;
+            }
+
+        }
+
+        @keyframes playRun {
+            from {
+                background-position: 0px 564px;
+            }
+
+            to {
+                background-position: -4605px 564px;
+            }
+        }
+
+        @keyframes playJump {
+            from {
+                background-position: 0px 846px;
+            }
+
+            to {
+                background-position: -4605px 846px;
+            }
+        }
+
+        @keyframes playIdle {
+            from {
+                background-position: 0px 1142px;
+            }
+
+            to {
+                background-position: -4605px 1142px;
+            }
+        }
+
+        @keyframes playDie {
+            from {
+                background-position: 0px 0px;
+            }
+
+            to {
+                background-position: -4605px 0px;
+            }
+        }
+
+        #walk:checked~#canvas {
+            animation: playWalk .75s steps(5, end) infinite;
+        }
+
+        #run:checked~#canvas {
+            animation: playRun .75s steps(5, end) infinite;
+        }
+
+        #jump:checked~#canvas {
+            animation: playJump .75s steps(5, end) infinite;
+        }
+
+        #die:checked~#canvas {
+            animation: playDie .75s steps(5, end) infinite;
+        }
+
+        #idle:checked~#canvas {
+            animation: playIdle .75s steps(5, end) infinite;
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <h1>Elige la animación del personaje:</h1>
+    <input type="radio" name="estilo" id="walk">
+    <label for="walk">Caminar</label>
+
+    <input type="radio" name="estilo" id="run">
+    <label for="run">Correr</label>
+
+    <input type="radio" name="estilo" id="jump">
+    <label for="jump">Saltar</label>
+
+    <input type="radio" name="estilo" id="die">
+    <label for="die">Morir</label>
+
+    <input type="radio" name="estilo" id="idle" checked>
+    <label for="idle">Quieto</label>
+
+    <div id="canvas"></div>
 </body>
+
 </html>
